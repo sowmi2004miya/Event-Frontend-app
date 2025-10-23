@@ -8,7 +8,7 @@ function EventList() {
 
   const fetchEvents = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/events");
+      const res = await axios.get("http://localhost:5000/api/occasion");
       setEvents(res.data);
     } catch (err) {
       console.error("Failed to fetch events", err);
@@ -22,7 +22,7 @@ function EventList() {
   const deleteEvent = async (id) => {
     if (!window.confirm("Are you sure you want to delete this event?")) return;
     try {
-      await axios.delete(`http://localhost:5000/api/events/${id}`);
+      await axios.delete(`http://localhost:5000/api/occasion/${id}`);
       fetchEvents();
     } catch (err) {
       console.error("Failed to delete event", err);

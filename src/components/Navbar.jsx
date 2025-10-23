@@ -7,7 +7,7 @@ function Navbar() {
       <div className="nav-links">
         <Link to="/">Home</Link>
         <Link to="/add-event">Add Event</Link>
-        <Link to="/events">View Events</Link>
+        <Link to="/occasion">View Events</Link>
       </div>
     </nav>
   );

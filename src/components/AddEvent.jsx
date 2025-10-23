@@ -16,7 +16,7 @@ function AddEvent() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5000/api/events", form);
+      await axios.post("http://localhost:5000/api/occasion", form);
       alert("Event added successfully!");
       setForm({ name: "", date: "", organiser: "", location: "" });
     } catch (err) {

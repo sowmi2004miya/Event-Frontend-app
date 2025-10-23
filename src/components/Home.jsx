@@ -6,7 +6,7 @@ function Home() {
       <div className="home-text">
         <h1>Welcome to Software Company Event Management</h1>
         <p>Manage your corporate events efficiently — plan, track, and update with ease.</p>
-        <button className="explore-btn" onClick={() =>navigate("/events")}>Explore Events</button>
+        <button className="explore-btn" onClick={() =>navigate("/occasion")}>Explore Events</button>
       </div>
       <img
         src="https://www.shutterstock.com/image-photo/event-management-concept-flowchart-related-600w-1355114297.jpg"
