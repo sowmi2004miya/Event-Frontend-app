@@ -13,14 +13,14 @@ function EditEvent() {
   });
 
   useEffect(() => {
-    axios.get(`http://localhost:5000/api/occasion/${id}`).then((res) => setForm(res.data));
+    axios.get(`http://localhost:5000/api/events/${id}`).then((res) => setForm(res.data));
   }, [id]);
 
   const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await axios.put(`http://localhost:5000/api/occasion/${id}`, form);
+    await axios.put(`http://localhost:5000/api/events/${id}`, form);
     alert("Event updated successfully!");
     navigate("/events");
   };
