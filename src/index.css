@@ -1,0 +1,146 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f8fb;
+  margin: 0;
+  color: #222;
+}
+
+/* Navbar */
+.navbar {
+  background: #004080;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+  font-size: 18px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.nav-links a {
+  color: white;
+  margin-left: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.nav-links a:hover {
+  color: #ffcc00;
+}
+
+/* Page Container */
+.page-container {
+  width: 80%;
+  margin: auto;
+  padding: 30px;
+}
+
+/* Home */
+.home-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 50px 0;
+}
+.home-text {
+  max-width: 500px;
+}
+.home-text h1 {
+  font-size: 38px;
+  color: #004080;
+}
+.home-text p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.explore-btn {
+  padding: 12px 25px;
+  background: #004080;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+.explore-btn:hover {
+  background: #002b5e;
+}
+.home-image {
+  width: 55%;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Forms */
+.form-container {
+  background: white;
+  width: 50%;
+  margin: 50px auto;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+.event-form input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+.btn-primary {
+  background: #004080;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.btn-primary:hover {
+  background: #003366;
+}
+
+/* Event List */
+.list-container {
+  text-align: center;
+  margin-top: 30px;
+}
+.event-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.event-table th,
+.event-table td {
+  border-bottom: 1px solid #ddd;
+  padding: 15px;
+}
+.event-table th {
+  background: #004080;
+  color: white;
+}
+.btn-edit {
+  background: #28a745;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 5px;
+  margin-right: 8px;
+  text-decoration: none;
+}
+.btn-edit:hover {
+  background: #218838;
+}
+.btn-delete {
+  background: #dc3545;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.btn-delete:hover {
+  background: #b02a37;
+}
